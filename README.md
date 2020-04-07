@@ -1,19 +1,19 @@
 
 ## Открытие ИС
 
+<!-- This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+You would need to install an ESLint plugin for your editor first. -->
 
-You would need to install an ESLint plugin for your editor first.
+>Экран 1
 
->**A note for Atom `linter-eslint` users**
+Получение списка доступных ИС `GetInvestProductList`
 
->If you are using the Atom `linter-eslint` plugin, make sure that **Use global ESLint installation** option is checked:
+*response*
+<!-- ><img src="http://i.imgur.com/yVNNHJM.png" width="300"> -->
 
-><img src="http://i.imgur.com/yVNNHJM.png" width="300">
-
-Then add this block to the `package.json` file of your project:
+<!-- Then add this block to the  file of your project: -->
 
 ```js
 {
@@ -22,6 +22,23 @@ Then add this block to the `package.json` file of your project:
     "extends": "react-app"
   }
 }
+[
+  {
+    ID: (string) идентификатор раздела
+    Title: (string) загловок раздела
+    Products: [
+                {
+                  ID: (string) id ИС для открытия
+                  GroupID: (string) идентификатор раздела
+                  Title: (string)
+                  File: (string) Тут передается содержимое файла
+                  FileName: (string)
+                  CodeKFE: (string)
+                }
+              ]
+  }
+]
+
 ```
 
 Finally, you will need to install some packages *globally*:
