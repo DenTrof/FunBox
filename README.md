@@ -10,33 +10,29 @@ You would need to install an ESLint plugin for your editor first. -->
 
 Получение списка доступных ИС `GetInvestProductList`
 
-*response*
+*response:*
 <!-- ><img src="http://i.imgur.com/yVNNHJM.png" width="300"> -->
 
 <!-- Then add this block to the  file of your project: -->
 
 ```js
-{
-  // ...
-  "eslintConfig": {
-    "extends": "react-app"
-  }
-}
 [
-  {
-    ID: (string) идентификатор раздела
-    Title: (string) загловок раздела
-    Products: [
-                {
-                  ID: (string) id ИС для открытия
-                  GroupID: (string) идентификатор раздела
-                  Title: (string)
-                  File: (string) Тут передается содержимое файла
-                  FileName: (string)
-                  CodeKFE: (string)
-                }
-              ]
-  }
+    {
+      "ID": (string) идентификатор раздела,
+      "Title": (string) загловок раздела,
+      "Products": [
+        {
+          "ID": (string) id ИС для открытия,
+          "GroupID": (string) идентификатор раздела,
+          "Title": (string) название продукта,
+          "Description": (string) описание продукта,,
+          "File": (string) путь к иконке продукта,,
+          "FileName": (string),
+          "CodeKFE": (string)
+        },
+
+        // ...
+    }
 ]
 
 ```
