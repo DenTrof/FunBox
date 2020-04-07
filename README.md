@@ -8,7 +8,9 @@ You would need to install an ESLint plugin for your editor first. -->
 
 >Экран 1
 
-Получение списка доступных ИС `GetInvestProductList`
+Выводим список доступных ИС
+
+Получение списка `GetInvestProductList`
 
 *response:*
 <!-- ><img src="http://i.imgur.com/yVNNHJM.png" width="300"> -->
